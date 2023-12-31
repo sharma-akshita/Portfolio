@@ -27,10 +27,7 @@
     .container {
       display: block;
     }
-    .arrow {
-      display: none;
-    }
-    .footer-arrow{
+    .arrow{
         display: none;
     }
     section,

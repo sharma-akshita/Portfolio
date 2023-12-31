@@ -128,20 +128,6 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-/*
-.hamburger-icon span:first-child{
-    transform: none;
-}
-
-.hamburger-icon span:nth-child(2){
-    opacity: 1;
-}
-
-.hamburger-icon span:last-child{
-    transform: none;
-}
-*/
-
 /* Sections */
 
 section {
@@ -272,6 +258,7 @@ section {
 }
 
 .arrow {
+  rotate: 180deg;
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
@@ -379,11 +366,4 @@ article .icon {
 
 #footer {
   position: relative;
-}
-
-.footer-arrow {
-  rotate: 180deg;
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
 }
