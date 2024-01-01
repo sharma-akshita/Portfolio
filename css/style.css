@@ -133,7 +133,6 @@ a:hover {
 section {
   padding-top: 4vh;
   margin: 0 10rem;
-  height: 96vh;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -165,6 +164,7 @@ section {
 
 .p1 {
   text-align: center;
+  color: #b50039;
 }
 
 .p2 {
@@ -206,7 +206,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #b50039 0.1rem solid;
 }
 
 .btn-color-2:hover,
@@ -216,12 +216,12 @@ section {
 
 .btn-color-2,
 .btn-color-1:hover {
-  background: rgb(53, 53, 53);
+  background: #b50000;
   color: white;
 }
 
 .btn-color-2:hover {
-  background: rgb(0, 0, 0);
+  background: #ce2b2b;
 }
 
 .btn-color-1 {
@@ -234,68 +234,71 @@ section {
 
 /* About Section */
 
-#about {
-  position: relative;
-}
-
 .about-container {
+  display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-top: 2rem;
 }
 
-.about-details {
-  justify-content: center;
-  flex-direction: column;
+.links{
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    position: relative;
 }
 
-.about-container {
-  display: flex;
+.links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
 }
 
-.about-img {
-  border-radius: 2rem;
+.links.active-link::after{
+    width: 50%;
 }
 
-.arrow {
-  rotate: 180deg;
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+.contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: 500;
 }
 
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
+.contents span{
+    color: #b50039;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.container {
-  display: flex;
-  gap: 4rem;
-  height: 80%;
+.about-p{
+    font-size: 14px;
+   /* text-align: center; */
 }
 
-.image {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.small-text{
+    font-size: 13px;
 }
 
-/* Experience Section */
-
-#experience {
-  position: relative;
+.contents{
+    display: none;
 }
+
+.contents.active-tab{
+    display: block;
+}
+
+/* About Section- Skills */
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: #b50039;
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   margin-bottom: 2rem;
 }
 
@@ -304,6 +307,16 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
 
 .article-container {
   display: flex;
@@ -326,10 +339,6 @@ article .icon {
 }
 
 /* Projects Section */
-
-#projects {
-  position: relative;
-}
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -354,16 +363,16 @@ article .icon {
 
 /* Contact Section */
 
-#contact {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-}
 
 /* Footer Section */
 
 #footer {
   position: relative;
+}
+
+.arrow {
+  rotate: 180deg;
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
 }

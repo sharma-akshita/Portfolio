@@ -15,7 +15,7 @@
         <div class="navbar">
           <ul class="nav-links">
             <li><a href="./#about">About</a></li>
-            <li><a href="./#experience">Experience</a></li>
+            <li><a href="./#skills">Skills</a></li>
             <li><a href="./#projects">Projects</a></li>
             <li><a href="./#contact">Contact</a></li>
           </ul>
@@ -32,7 +32,7 @@
           <div class="menu-links">
             <li><a href="./#about" onclick="toggleMenu()">About</a></li>
             <li>
-              <a href="./#experience" onclick="toggleMenu()">Experience</a>
+              <a href="./#skills" onclick="toggleMenu()">Skills</a>
             </li>
             <li><a href="./#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="./#contact" onclick="toggleMenu()">Contact</a></li>
@@ -43,10 +43,9 @@
     <main>
       <section id="profile">
         <div class="img">
-          <img src="images/linkedin.png" alt="Akshita Sharma Profile" />
+          <img src="./images/linkedin.png" alt="Akshita Sharma Profile" />
         </div>
         <div class="text">
-          <p class="p1">Hello, I'm</p>
           <h1 class="title">Akshita Sharma</h1>
           <p class="p2">Web Developer</p>
           <div class="btn-container">
@@ -83,176 +82,177 @@
       <section id="about">
         <p class="p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
-        <div class="container">
-          <div class="image">
-            <img
-              src="./images/experience.png"
-              alt="Profile Picture"
-              class="about-img"
-            />
-          </div>
-          <div class="about-details">
+        <p style="text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, aliquid. Iure exercitationem itaque enim natus incidunt, quo quisquam impedit libero nisi perferendis eos soluta repellat! Laboriosam quasi temporibus eveniet esse.</p>
             <div class="about-container">
-              <div class="details-container">
-                <img
-                  src="./images/experience.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p>2+ years <br />Web Developer</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./images/education.png"
-                  alt="Education"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>Computer Programming<br />Sheridan College</p>
-              </div>
+                <p class="links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="links" onclick="opentab('experience')">Experience</p>
+                <p class="links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="text-container">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-                cum autem suscipit adipisci placeat, ab fugiat tenetur sequi vel
-                quibusdam nesciunt totam exercitationem et alias repellendus?
-                Ullam repellat eaque porro.
-              </p>
+            <div class="contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                    <li><span>Web Development</span><br />Designing Websites</li>
+                </ul>
+                <div class="experience-details">
+                    <div class="about-container">
+                      <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>HTML</h4>
+                              <p class="about-p">Experienced</p>
+                            </div>
+                          </article>
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>CSS</h4>
+                              <p class="about-p">Experienced</p>
+                            </div>
+                          </article>
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>SASS</h4>
+                              <p class="about-p">Intermediate</p>
+                            </div>
+                          </article>
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>UI/UX</h4>
+                              <p class="about-p">Intermediate</p>
+                            </div>
+                          </article>
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>JavaScript</h4>
+                              <p class="about-p">Intermediate</p>
+                            </div>
+                          </article>
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>TypeScript</h4>
+                              <p class="about-p">Basic</p>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Development</h2>
+                        <div class="article-container">
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>MySQL</h4>
+                              <p class="about-p">Experienced</p>
+                            </div>
+                          </article>
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>PHP</h4>
+                              <p class="about-p">Experienced</p>
+                            </div>
+                          </article>
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>Spring Boot</h4>
+                              <p class="about-p">Intermediate</p>
+                            </div>
+                          </article>
+                          <article>
+                            <img
+                              src="./images/checkmark.png"
+                              alt="Checkmark icon"
+                              class="icon"
+                            />
+                            <div>
+                              <h4>Git</h4>
+                              <p class="about-p">Intermediate</p>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="experience">
-        <p class="p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details">
-          <div class="about-container">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>SASS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>TypeScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Material UI</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-              </div>
+            <div class="contents" id="experience">
+                <ul>
+                    <li><span>Jan 2022 - Current</span><br />Website Designer at Omarx Technologies | Ludhiana | Punjab</li>
+                    <p class="small-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
+                    </p>
+                    <li><span>Jan 2023 - Current</span><br />UI Designing at Sheridan College | Brampton | Ontario</li>
+                    <p class="small-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
+                    </p>
+                    <li><span>May 2023 - Current</span><br />Social Media Manager at Freshman Coders Club | Sheridan College | Brampton | Ontario</li>
+                    <p class="small-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
+                    </p>
+                </ul>
+            </div> 
+            <div class="contents" id="education">
+                <ul>
+                    <li><span>Jan 2023 - Current</span><br />Computer Programming at Sheridan College | Brampton | Ontario</li>
+                    <p class="small-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
+                    </p>
+                    <li><span>June 2022 - Dec 2022</span><br />Programming Languages | Online Courses</li>
+                    <p class="small-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
+                    </p>
+                    <li><span>2021 - 2022</span><br />High School at DAV School | Phillaur | Punjab</li>
+                    <p class="small-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
+                    </p>
+                </ul>
             </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Backend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MySQL</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PHP</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Spring Boot</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./images/checkmark.png"
-                    alt="Checkmark icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
       <section id="projects">
-        <p class="p1">Browse My Recent</p>
+        <p class="p1">Browse My</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details">
           <div class="about-container">
