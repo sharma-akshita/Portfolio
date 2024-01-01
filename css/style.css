@@ -50,9 +50,9 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: rgb(99, 99, 99);
+  color: #b50039;
   text-underline-offset: 0.5rem;
-  text-decoration-color: rgba(181, 181, 181);
+  text-decoration-color: #b50000;
 }
 
 .logo {
@@ -143,7 +143,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .img {
@@ -340,25 +341,91 @@ article .icon {
 
 /* Projects Section */
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-.project-title {
-  margin: 1rem;
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer p, .layer h3, .layer a{
+  color: white;
+}
+
+.layer p{
+  font-size: 10px;
+}
+
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.layer a{
+  text-decoration: none;
+  margin-top: 20px;
+  color: #ff004f;
+  font-size: 18px;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.work:hover img{
+  transform: scale(1.1);
+}
+
+.work:hover .layer{
+  height: 100%;
+}
+
+.more{
+  display: block;
+  margin: 30px auto;
+  width: fit-content;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
   color: black;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+.project9{
+  display: none;
 }
 
 /* Contact Section */
@@ -376,3 +443,4 @@ article .icon {
   right: -5rem;
   bottom: 2.5rem;
 }
+

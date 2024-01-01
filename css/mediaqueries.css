@@ -1,8 +1,10 @@
+@media screen and (max-width:1430px) {
+  .project9{
+    display: initial;
+  }
+}
+
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
     .about-container {
       flex-wrap: wrap;
     }
@@ -46,15 +48,17 @@
       margin-top: 0;
     }
   }
+
+  @media screen and (max-width: 921px){
+    .project9{
+      display: none;
+    }
+  }
   
   @media screen and (max-width: 600px) {
     #contact,
     footer {
       height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
     }
     article {
       font-size: 1rem;
