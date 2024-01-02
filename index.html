@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediaqueries.css" />
     <script src="https://kit.fontawesome.com/7410428b00.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
 
   <body>
@@ -339,13 +340,35 @@
       <section id="contact">
         <p class="p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-container">
-          <div class="contact-container">
-            <img
-              src="./images/email.png"
-              alt="Email Icon"
-              class="icon contact-icon"
-            />
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <div class="contact-info">
+              <a onclick="window.open('mailto:theradiantedge@gmail.com?cc=akshitas0117@gmail.com', '_blank')"><i class="fa-solid fa-envelope"></i><span class="info">theradiantedge@gmail.com</span></a>
+              <br />
+              <a href="tel:647-949-9570"><i class="fa-solid fa-phone"></i><span class="info">(647) 949-9570</span></a>
+              <br />
+              <a onclick="window.open('https://www.instagram.com/theradiant_edge?igsh=ZGNjOWZkYTE3MQ%3D%3D&utm_source=qr', '_blank')"><i class="fa-brands fa-instagram"></i><span class="info">theradiant_edge</span></a>
+              <br />
+              <a onclick="window.open('https://www.linkedin.com/in/akshita-sharma-070810260/', '_blank')"><i class="fa-brands fa-linkedin"></i><span class="info">LinkedIn</span></a>
+              <br />
+              <a onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184532.05867044712!2d-79.92435307105494!3d43.72481560036085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b15eaa5d05abf%3A0x352d31667cc38677!2sBrampton%2C%20ON!5e0!3m2!1sen!2sca!4v1704224747397!5m2!1sen!2sca', '_blank')"><i class="fa-solid fa-location-dot"></i><span class="info">Brampton, ON</span></a>
+              </div>
+              <br />
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184532.05867044712!2d-79.92435307105494!3d43.72481560036085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b15eaa5d05abf%3A0x352d31667cc38677!2sBrampton%2C%20ON!5e0!3m2!1sen!2sca!4v1704224747397!5m2!1sen!2sca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+              <input type="hidden" name="access_key" value="26ac6cf3-7ae4-4be7-bc36-04e54e9fea45">
+              <input type="text" name="Name" id="name" placeholder="Your Name" required>
+              <input type="email" name="Email" id="email" placeholder="Your Email">
+              <textarea name="Message" id="message" rows="5" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn-color-3">Submit</button>
+            </form>
+          </div>
           </div>
         </div>
       </section>
