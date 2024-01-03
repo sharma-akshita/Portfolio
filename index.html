@@ -11,14 +11,15 @@
   </head>
 
   <body>
-    <div class="background">
+    <div class="background" id="home">
     <header>
       <nav id="desktop-nav">
         <div class="logo">Akshita Sharma</div>
         <div class="navbar">
           <ul class="nav-links">
+            <li><a href="./#home">Home</a></li>
             <li><a href="./#about">About</a></li>
-            <li><a href="./#skills">Skills</a></li>
+            <li><a href="./#services">Services</a></li>
             <li><a href="./#projects">Projects</a></li>
             <li><a href="./#contact">Contact</a></li>
           </ul>
@@ -33,9 +34,10 @@
             <span></span>
           </div>
           <div class="menu-links">
+            <li><a href="./#home" onclick="toggleMenu()">Home</a></li>
             <li><a href="./#about" onclick="toggleMenu()">About</a></li>
             <li>
-              <a href="./#skills" onclick="toggleMenu()">Skills</a>
+              <a href="./#services" onclick="toggleMenu()">Services</a>
             </li>
             <li><a href="./#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="./#contact" onclick="toggleMenu()">Contact</a></li>
@@ -46,7 +48,7 @@
     <main>
       <section id="profile">
         <div class="img">
-          <img src="./images/project-1.png" alt="Akshita Sharma Profile" />
+          <img src="./images/#" alt="Akshita Sharma Profile" />
         </div>
         <div class="text">
           <h1 class="title" style="
@@ -225,7 +227,7 @@
             </div>
             <div class="contents" id="experience">
                 <ul>
-                    <li><span>Jan 2022 - Current</span><br />Website Designer at Omarx Technologies | Ludhiana | Punjab</li>
+                    <li><span>Jan 2022 - Current</span><br />Website Designer at Omarx Technologies | India</li>
                     <p class="small-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
                     </p>
@@ -249,13 +251,39 @@
                     <p class="small-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
                     </p>
-                    <li><span>2021 - 2022</span><br />High School at DAV School | Phillaur | Punjab</li>
+                    <li><span>2021 - 2022</span><br />High School at DAV School | India</li>
                     <p class="small-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officia odit porro quae praesentium pariatur, asperiores doloremque nisi molestiae, nulla obcaecati illum alias exercitationem. Ab fugiat ipsa iste cumque itaque.
                     </p>
                 </ul>
             </div>
       </section>
+      <section id="services">
+        <p class="p1">Explore the</p>
+        <h1 class="title">Services</h1>
+        <div class="container">
+          <div class="service-list">
+            <div class="service-item">
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quisquam quidem dolor, excepturi expedita.</p>
+              <a href="#">Learn More</a>
+            </div>
+            <div class="service-item">
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>UI/UX Design</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quisquam quidem dolor, excepturi expedita.</p>
+              <a href="#">Learn More</a>
+            </div>
+            <div class="service-item">
+              <i class="fa-brands fa-slack"></i>
+              <h2>Graphic Design</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quisquam quidem dolor, excepturi expedita.</p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          </div>
+          </section>
       <section id="projects">
         <p class="p1">Browse My</p>
         <h1 class="title">Projects</h1>

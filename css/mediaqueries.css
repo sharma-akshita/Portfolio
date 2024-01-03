@@ -12,6 +12,12 @@
     #projects {
       height: fit-content;
     }
+    .service-item h2{
+      font-size: 24px;
+    }
+    .service-item p{
+      font-size: 13px;
+    }
   }
   
   @media screen and (max-width: 1200px) {
@@ -49,12 +55,6 @@
     }
   }
 
-  @media screen and (max-width: 921px){
-    .project9{
-      display: none;
-    }
-  }
-
   @media screen and (max-width: 1050px){
     .row{
       display: block;
@@ -65,6 +65,27 @@
     }
     .contact-left .map{
       margin-left: 3rem;
+    }
+    .service-item h2{
+      font-size: 22px;
+    }
+    .service-item p{
+      font-size: 12px;
+    }
+    .service-item a{
+      font-size: 11px;
+    }
+  }
+
+  @media screen and (max-width: 921px){
+    .project9{
+      display: none;
+    }
+    .service-list{
+      display: block;
+    }
+    .service-item{
+      margin-bottom: 20px;
     }
   }
   
